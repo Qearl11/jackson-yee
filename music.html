@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Jackson Yee - Music</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a class="icon" href="index.html">Jackson Yee</a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span><span class="bar"></span
+          ><span class="bar"></span>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="music.html">Music</a></li>
+            <li><a href="movie.html">Movie</a></li>
+            <li><a href="dance.html">Dance</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section id="works">
+          <h1>Discover Jackson's Music</h1>
+          <article class="work-item">
+            <h2>Music Albums</h2>
+            <p>
+              Explore the discography of Jackson Yee and listen to his latest
+              and most popular songs here.
+            </p>
+          </article>
+
+          <div class="audio-gallery">
+            <audio id="bg-music" loop>
+              <source src="audio/background-music.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <button
+              id="play-button"
+              class="button"
+              onclick="toggleMusic()"
+              style="background-image: url('image/button-background.jpg')"
+            >
+              <span>Play Music</span>
+            </button>
+
+            <audio id="music2" loop>
+              <source src="audio/music2.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <button
+              id="play-button2"
+              class="button"
+              onclick="toggleMusic2()"
+              style="background-image: url('image/music2.jpg')"
+            >
+              <span>Play Music</span>
+            </button>
+
+            <audio id="music3" loop>
+              <source src="audio/music3.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <button
+              id="play-button3"
+              class="button"
+              onclick="toggleMusic3()"
+              style="background-image: url('image/music3.jpg')"
+            >
+              <span>Play Music</span>
+            </button>
+
+            <audio id="music4" loop>
+              <source src="audio/music4.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <button
+              id="play-button4"
+              class="button"
+              onclick="toggleMusic4()"
+              style="background-image: url('image/music4.jpg')"
+            >
+              <span>Play Music</span>
+            </button>
+
+            <audio id="music5" loop>
+              <source src="audio/music5.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <button
+              id="play-button5"
+              class="button"
+              onclick="toggleMusic5()"
+              style="background-image: url('image/music5.jpg')"
+            >
+              <span>Play Music</span>
+            </button>
+
+            <audio id="music6" loop>
+              <source src="audio/music6.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <button
+              id="play-button6"
+              class="button"
+              onclick="toggleMusic6()"
+              style="background-image: url('image/music6.jpg')"
+            >
+              <span>Play Music</span>
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <p>&copy; 2024 Xuechun Wang</p>
+      </div>
+    </footer>
+  </body>
+</html>
