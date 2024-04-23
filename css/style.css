@@ -1,0 +1,397 @@
+body {
+  background-color: rgb(191, 216, 245);
+  font-family: "Itim", cursive;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #bfb0e2, #d3daf3, #adc4ed, #f3dbf5);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  height: 100%;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon {
+  font-family: "Permanent Marker", cursive;
+  font-size: 30px;
+  color: #333;
+  margin: 0;
+  padding: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: normal;
+}
+
+#welcome {
+  background-color: rgb(216, 229, 244);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 50px auto;
+  align-items: center;
+  text-align: left;
+}
+
+#biography {
+  align-items: center;
+  text-align: left;
+}
+
+main .container {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#welcome h1,
+#works h1 {
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  padding: 3px;
+}
+
+#works h1 {
+  margin: 15px;
+}
+
+#works h2,
+h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  padding: 3px;
+}
+
+article {
+  margin: 20px 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 0;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url("image/button-background.jpg");
+  background-size: cover;
+  border: 25px solid #333;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.button span {
+  display: none;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  background: rgb(191, 216, 245);
+  color: rgb(4, 3, 3);
+  padding: 10px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+nav ul li {
+  padding: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #6d6def;
+}
+
+.current {
+  color: #6d6def;
+}
+
+.featured-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.profile-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  border-radius: 10px;
+}
+
+img {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+header .menu-toggle {
+  display: block;
+}
+
+.menu-toggle {
+  display: block;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.menu-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #333;
+}
+
+.audio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0 10px 0;
+  border: 1px solid #ccc;
+}
+
+p {
+  font-size: 20px;
+  padding: 10px;
+}
+
+footer {
+  background: rgb(191, 216, 245);
+  color: #0a0a0a;
+  text-align: center;
+  padding: 5px;
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  align-items: stretch;
+  perspective: 2500px;
+}
+
+.movie-item {
+  width: 300px;
+  height: 500px;
+  margin: 5px;
+  border-radius: 8px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.movie-item img {
+  width: 100%;
+  height: 95%;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.movie-item h3 {
+  text-align: center;
+  margin-top: 2px;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.movie-card-back a {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+.movie-card-back p {
+  font-size: 24px;
+  padding: 0;
+}
+
+.movie-item.is-flipped {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.movie-card-front,
+.movie-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.movie-card-front {
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+}
+
+.movie-card-back {
+  width: 100%;
+  height: 95%;
+  background-color: rgb(191, 216, 245);
+  color: black;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  top: 10px;
+}
+
+.movie-card-front img:hover {
+  transform: none;
+}
+
+@media screen and (min-width: 480px) {
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-toggle .bar {
+    display: none;
+  }
+
+  .button {
+    width: 250px;
+    height: 250px;
+  }
+
+  .featured-image {
+    height: auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .profile-image {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .movie-item {
+    flex-basis: 250px;
+    height: 400px;
+    width: 200px;
+  }
+
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-around;
+    perspective: 1000px;
+  }
+
+  body {
+    font-family: "Montserrat", "Comic Sans MS", "Pacifico";
+  }
+
+  .movie-item h3 {
+    font-weight: bold;
+    font-size: larger;
+  }
+
+  .movie-card-back a {
+    text-decoration: underline;
+    font-size: 24px;
+  }
+
+  .movie-card-back p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+}
